@@ -1,0 +1,17 @@
+<h3>Cadastro de produto</h3>
+<div>
+  <label>Produto: <input [(ngModel)]="produto" placeholder="Nome do produto" /></label>
+</div>
+<div>
+  <label>Preço: <input [(ngModel)]="preco" type="number" placeholder="Preço" /></label>
+</div>
+<div>
+  <label>Quantidade: <input [(ngModel)]="quantidade" type="number" placeholder="Quantidade" /></label>
+</div>
+
+<hr />
+<h4>Resumo</h4>
+<p>Produto: {{ produto }}</p>
+<p>Preço: {{ preco | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</p>
+<p>Quantidade: {{ quantidade }}</p>
+<p>Total: {{ total | currency:'BRL':'symbol':'1.2-2':'pt-BR' }}</p>

@@ -1,0 +1,10 @@
+<h3>Login simulado</h3>
+<div>
+  <label>Usuário: <input [(ngModel)]="usuario" placeholder="Usuário" /></label>
+</div>
+<div>
+  <label>Senha: <input [(ngModel)]="senha" type="password" placeholder="Senha" /></label>
+</div>
+<button [disabled]="!podeEntrar" (click)="entrar()">Entrar</button>
+
+<p *ngIf="mensagem">{{ mensagem }}</p>

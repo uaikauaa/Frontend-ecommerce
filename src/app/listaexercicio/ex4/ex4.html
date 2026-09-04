@@ -1,0 +1,7 @@
+<h3>Botão habilitado ou desabilitado</h3>
+<p>Estado do formulário: <strong>{{ formularioValido ? 'Válido' : 'Inválido' }}</strong></p>
+<button [disabled]="!formularioValido">Salvar</button>
+<br><br>
+<button (click)="formularioValido = !formularioValido">
+  {{ formularioValido ? 'Invalidar formulário' : 'Validar formulário' }}
+</button>

@@ -1,0 +1,7 @@
+<h3>Controle de estoque</h3>
+<div>
+  <label>Produto: <input [(ngModel)]="nomeProduto" /></label>
+</div>
+<p>{{ nomeProduto }} — Estoque: {{ estoque }}</p>
+<button (click)="diminuir()" [disabled]="estoque === 0">[-]</button>
+<button (click)="aumentar()">[+]</button>
