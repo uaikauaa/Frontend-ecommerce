@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './ex3.html',
 })
 export class Ex3 {
-  imagemProduto = 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg';
-  descricaoImagem = 'Teclado mecânico gamer';
+  imagemProduto = 'heineken.jpg';
+  descricaoImagem = 'Heineken Lager Beer 330ml — Premium Quality';
 }
